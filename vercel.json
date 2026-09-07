@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm --filter @workspace/bunkmaster build",
-  "outputDirectory": "bunkmaster/dist",
+  "buildCommand": "vite build",
+  "outputDirectory": "dist",
   "installCommand": "pnpm install --frozen-lockfile=false"
 }
