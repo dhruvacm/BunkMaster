@@ -1,0 +1,18 @@
+{
+  "name": "BunkMaster",
+  "short_name": "BunkMaster",
+  "description": "Track. Understand. Bunk smarter.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f2ea",
+  "theme_color": "#f5f2ea",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "BunkMaster"
+description = "A premium mobile-first college attendance manager that helps students track attendance, understand safety margins, and make smarter class decisions with local-only persistence."
+version = "1.0.0"
+id = "artifacts/bunkmaster"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 26116
+
+[services.development]
+run = "pnpm --filter @workspace/bunkmaster run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/bunkmaster", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/bunkmaster/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "26116"
+BASE_PATH = "/"

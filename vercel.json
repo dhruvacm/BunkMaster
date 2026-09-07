@@ -1,0 +1,5 @@
+{
+  "buildCommand": "pnpm --filter @workspace/bunkmaster build",
+  "outputDirectory": "bunkmaster/dist",
+  "installCommand": "pnpm install --frozen-lockfile=false"
+}
